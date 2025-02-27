@@ -16,8 +16,8 @@ import (
 	"testing"
 	"testing/iotest"
 
-	"github.com/bitfield/script"
 	"github.com/google/go-cmp/cmp"
+	"github.com/jessp01/script"
 	"github.com/rogpeppe/go-internal/testscript"
 )
 

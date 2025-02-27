@@ -5,8 +5,8 @@ package script_test
 import (
 	"testing"
 
-	"github.com/bitfield/script"
 	"github.com/google/go-cmp/cmp"
+	"github.com/jessp01/script"
 )
 
 func TestExecForEach_HandlesLongLines(t *testing.T) {

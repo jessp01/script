@@ -1,4 +1,4 @@
-module github.com/bitfield/script
+module github.com/jessp01/script
 
 go 1.18
 

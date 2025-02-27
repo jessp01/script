@@ -1,10 +1,10 @@
-[![Go Reference](https://pkg.go.dev/badge/github.com/bitfield/script.svg)](https://pkg.go.dev/github.com/bitfield/script)
-[![Go Report Card](https://goreportcard.com/badge/github.com/bitfield/script)](https://goreportcard.com/report/github.com/bitfield/script)
+[![Go Reference](https://pkg.go.dev/badge/github.com/jessp01/script.svg)](https://pkg.go.dev/github.com/jessp01/script)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jessp01/script)](https://goreportcard.com/report/github.com/jessp01/script)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/avelino/awesome-go)
-![Tests](https://github.com/bitfield/script/actions/workflows/test.yml/badge.svg)
+![Tests](https://github.com/jessp01/script/actions/workflows/test.yml/badge.svg)
 
 ```go
-import "github.com/bitfield/script"
+import "github.com/jessp01/script"
 ```
 
 [![Magical gopher logo](img/magic.png)](https://bitfieldconsulting.com/golang/scripting)
@@ -28,30 +28,30 @@ If you're already familiar with shell scripting and the Unix toolset, here is a 
 
 | Unix / shell       | `script` equivalent |
 | ------------------ | ------------------- |
-| (any program name) | [`Exec`](https://pkg.go.dev/github.com/bitfield/script#Exec) |
-| `[ -f FILE ]`      | [`IfExists`](https://pkg.go.dev/github.com/bitfield/script#IfExists) |
-| `>`                | [`WriteFile`](https://pkg.go.dev/github.com/bitfield/script#Pipe.WriteFile) |
-| `>>`               | [`AppendFile`](https://pkg.go.dev/github.com/bitfield/script#Pipe.AppendFile) |
-| `$*`               | [`Args`](https://pkg.go.dev/github.com/bitfield/script#Args) |
-| `basename`         | [`Basename`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Basename) |
-| `cat`              | [`File`](https://pkg.go.dev/github.com/bitfield/script#File) / [`Concat`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Concat) |
-| `curl`             | [`Do`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Do) / [`Get`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Get) / [`Post`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Post) |
-| `cut`              | [`Column`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Column) |
-| `dirname`          | [`Dirname`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Dirname) |
-| `echo`             | [`Echo`](https://pkg.go.dev/github.com/bitfield/script#Echo) |
-| `find`             | [`FindFiles`](https://pkg.go.dev/github.com/bitfield/script#FindFiles) |
-| `grep`             | [`Match`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Match) / [`MatchRegexp`](https://pkg.go.dev/github.com/bitfield/script#Pipe.MatchRegexp) |
-| `grep -v`          | [`Reject`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Reject) / [`RejectRegexp`](https://pkg.go.dev/github.com/bitfield/script#Pipe.RejectRegexp) |
-| `head`             | [`First`](https://pkg.go.dev/github.com/bitfield/script#Pipe.First) |
-| `jq`     | [`JQ`](https://pkg.go.dev/github.com/bitfield/script#Pipe.JQ) |
-| `ls`               | [`ListFiles`](https://pkg.go.dev/github.com/bitfield/script#ListFiles) |
-| `sed`              | [`Replace`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Replace) / [`ReplaceRegexp`](https://pkg.go.dev/github.com/bitfield/script#Pipe.ReplaceRegexp) |
-| `sha256sum`        | [`SHA256Sum`](https://pkg.go.dev/github.com/bitfield/script#Pipe.SHA256Sum) / [`SHA256Sums`](https://pkg.go.dev/github.com/bitfield/script#Pipe.SHA256Sums) |
-| `tail`             | [`Last`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Last) |
-| `tee`              | [`Tee`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Tee) |
-| `uniq -c`          | [`Freq`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Freq) |
-| `wc -l`            | [`CountLines`](https://pkg.go.dev/github.com/bitfield/script#Pipe.CountLines) |
-| `xargs`            | [`ExecForEach`](https://pkg.go.dev/github.com/bitfield/script#Pipe.ExecForEach) |
+| (any program name) | [`Exec`](https://pkg.go.dev/github.com/jessp01/script#Exec) |
+| `[ -f FILE ]`      | [`IfExists`](https://pkg.go.dev/github.com/jessp01/script#IfExists) |
+| `>`                | [`WriteFile`](https://pkg.go.dev/github.com/jessp01/script#Pipe.WriteFile) |
+| `>>`               | [`AppendFile`](https://pkg.go.dev/github.com/jessp01/script#Pipe.AppendFile) |
+| `$*`               | [`Args`](https://pkg.go.dev/github.com/jessp01/script#Args) |
+| `basename`         | [`Basename`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Basename) |
+| `cat`              | [`File`](https://pkg.go.dev/github.com/jessp01/script#File) / [`Concat`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Concat) |
+| `curl`             | [`Do`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Do) / [`Get`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Get) / [`Post`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Post) |
+| `cut`              | [`Column`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Column) |
+| `dirname`          | [`Dirname`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Dirname) |
+| `echo`             | [`Echo`](https://pkg.go.dev/github.com/jessp01/script#Echo) |
+| `find`             | [`FindFiles`](https://pkg.go.dev/github.com/jessp01/script#FindFiles) |
+| `grep`             | [`Match`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Match) / [`MatchRegexp`](https://pkg.go.dev/github.com/jessp01/script#Pipe.MatchRegexp) |
+| `grep -v`          | [`Reject`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Reject) / [`RejectRegexp`](https://pkg.go.dev/github.com/jessp01/script#Pipe.RejectRegexp) |
+| `head`             | [`First`](https://pkg.go.dev/github.com/jessp01/script#Pipe.First) |
+| `jq`     | [`JQ`](https://pkg.go.dev/github.com/jessp01/script#Pipe.JQ) |
+| `ls`               | [`ListFiles`](https://pkg.go.dev/github.com/jessp01/script#ListFiles) |
+| `sed`              | [`Replace`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Replace) / [`ReplaceRegexp`](https://pkg.go.dev/github.com/jessp01/script#Pipe.ReplaceRegexp) |
+| `sha256sum`        | [`SHA256Sum`](https://pkg.go.dev/github.com/jessp01/script#Pipe.SHA256Sum) / [`SHA256Sums`](https://pkg.go.dev/github.com/jessp01/script#Pipe.SHA256Sums) |
+| `tail`             | [`Last`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Last) |
+| `tee`              | [`Tee`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Tee) |
+| `uniq -c`          | [`Freq`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Freq) |
+| `wc -l`            | [`CountLines`](https://pkg.go.dev/github.com/jessp01/script#Pipe.CountLines) |
+| `xargs`            | [`ExecForEach`](https://pkg.go.dev/github.com/jessp01/script#Pipe.ExecForEach) |
 
 # Some examples
 
@@ -218,7 +218,7 @@ script.Echo("a\nb\nc").FilterScan(func(line string, w io.Writer) {
 // scanned line: "c"
 ```
 
-And there's more. Much more. [Read the docs](https://pkg.go.dev/github.com/bitfield/script) for full details, and more examples.
+And there's more. Much more. [Read the docs](https://pkg.go.dev/github.com/jessp01/script) for full details, and more examples.
 
 # A realistic use case
 
@@ -240,7 +240,7 @@ There's a lot going on there, and it's pleasing to find that the equivalent `scr
 package main
 
 import (
-	"github.com/bitfield/script"
+	"github.com/jessp01/script"
 )
 
 func main() {
@@ -259,7 +259,7 @@ Let's try it out with some [sample data](testdata/access.log):
 
 # Documentation
 
-See [pkg.go.dev](https://pkg.go.dev/github.com/bitfield/script) for the full documentation, or read on for a summary.
+See [pkg.go.dev](https://pkg.go.dev/github.com/jessp01/script) for the full documentation, or read on for a summary.
 
 ## Sources
 
@@ -267,18 +267,18 @@ These are functions that create a pipe with a given contents:
 
 | Source | Contents |
 | -------- | ------------- |
-| [`Args`](https://pkg.go.dev/github.com/bitfield/script#Args) | command-line arguments
-| [`Do`](https://pkg.go.dev/github.com/bitfield/script#Do) | HTTP response
-| [`Echo`](https://pkg.go.dev/github.com/bitfield/script#Echo) | a string
-| [`Exec`](https://pkg.go.dev/github.com/bitfield/script#Exec) | command output
-| [`File`](https://pkg.go.dev/github.com/bitfield/script#File) | file contents
-| [`FindFiles`](https://pkg.go.dev/github.com/bitfield/script#FindFiles) | recursive file listing
-| [`Get`](https://pkg.go.dev/github.com/bitfield/script#Get) | HTTP response
-| [`IfExists`](https://pkg.go.dev/github.com/bitfield/script#IfExists) | do something only if some file exists
-| [`ListFiles`](https://pkg.go.dev/github.com/bitfield/script#ListFiles) | file listing (including wildcards)
-| [`Post`](https://pkg.go.dev/github.com/bitfield/script#Post) | HTTP response
-| [`Slice`](https://pkg.go.dev/github.com/bitfield/script#Slice) | slice elements, one per line
-| [`Stdin`](https://pkg.go.dev/github.com/bitfield/script#Stdin) | standard input
+| [`Args`](https://pkg.go.dev/github.com/jessp01/script#Args) | command-line arguments
+| [`Do`](https://pkg.go.dev/github.com/jessp01/script#Do) | HTTP response
+| [`Echo`](https://pkg.go.dev/github.com/jessp01/script#Echo) | a string
+| [`Exec`](https://pkg.go.dev/github.com/jessp01/script#Exec) | command output
+| [`File`](https://pkg.go.dev/github.com/jessp01/script#File) | file contents
+| [`FindFiles`](https://pkg.go.dev/github.com/jessp01/script#FindFiles) | recursive file listing
+| [`Get`](https://pkg.go.dev/github.com/jessp01/script#Get) | HTTP response
+| [`IfExists`](https://pkg.go.dev/github.com/jessp01/script#IfExists) | do something only if some file exists
+| [`ListFiles`](https://pkg.go.dev/github.com/jessp01/script#ListFiles) | file listing (including wildcards)
+| [`Post`](https://pkg.go.dev/github.com/jessp01/script#Post) | HTTP response
+| [`Slice`](https://pkg.go.dev/github.com/jessp01/script#Slice) | slice elements, one per line
+| [`Stdin`](https://pkg.go.dev/github.com/jessp01/script#Stdin) | standard input
 
 ## Filters
 
@@ -286,34 +286,34 @@ Filters are methods on an existing pipe that also return a pipe, allowing you to
 
 | Filter | Results |
 | -------- | ------------- |
-| [`Basename`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Basename) | removes leading path components from each line, leaving only the filename |
-| [`Column`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Column) | Nth column of input |
-| [`Concat`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Concat) | contents of multiple files |
-| [`Dirname`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Dirname) | removes filename from each line, leaving only leading path components |
-| [`Do`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Do) | response to supplied HTTP request |
-| [`Echo`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Echo) | all input replaced by given string |
-| [`Exec`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Exec) | filtered through external command |
-| [`ExecForEach`](https://pkg.go.dev/github.com/bitfield/script#Pipe.ExecForEach) | execute given command template for each line of input |
-| [`Filter`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Filter) | user-supplied function filtering a reader to a writer |
-| [`FilterLine`](https://pkg.go.dev/github.com/bitfield/script#Pipe.FilterLine) | user-supplied function filtering each line to a string|
-| [`FilterScan`](https://pkg.go.dev/github.com/bitfield/script#Pipe.FilterScan) | user-supplied function filtering each line to a writer |
-| [`First`](https://pkg.go.dev/github.com/bitfield/script#Pipe.First) | first N lines of input |
-| [`Freq`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Freq) | frequency count of unique input lines, most frequent first |
-| [`Get`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Get) | response to HTTP GET on supplied URL |
-| [`Join`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Join) | replace all newlines with spaces |
-| [`JQ`](https://pkg.go.dev/github.com/bitfield/script#Pipe.JQ) | result of `jq` query |
-| [`Last`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Last) | last N lines of input|
-| [`Match`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Match) | lines matching given string |
-| [`MatchRegexp`](https://pkg.go.dev/github.com/bitfield/script#Pipe.MatchRegexp) | lines matching given regexp |
-| [`Post`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Post) | response to HTTP POST on supplied URL |
-| [`Reject`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Reject) | lines not matching given string |
-| [`RejectRegexp`](https://pkg.go.dev/github.com/bitfield/script#Pipe.RejectRegexp) | lines not matching given regexp |
-| [`Replace`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Replace) | matching text replaced with given string |
-| [`ReplaceRegexp`](https://pkg.go.dev/github.com/bitfield/script#Pipe.ReplaceRegexp) | matching text replaced with given string |
-| [`SHA256Sums`](https://pkg.go.dev/github.com/bitfield/script#Pipe.SHA256Sums) | SHA-256 hashes of each listed file |
-| [`Tee`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Tee) | input copied to supplied writers |
+| [`Basename`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Basename) | removes leading path components from each line, leaving only the filename |
+| [`Column`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Column) | Nth column of input |
+| [`Concat`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Concat) | contents of multiple files |
+| [`Dirname`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Dirname) | removes filename from each line, leaving only leading path components |
+| [`Do`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Do) | response to supplied HTTP request |
+| [`Echo`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Echo) | all input replaced by given string |
+| [`Exec`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Exec) | filtered through external command |
+| [`ExecForEach`](https://pkg.go.dev/github.com/jessp01/script#Pipe.ExecForEach) | execute given command template for each line of input |
+| [`Filter`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Filter) | user-supplied function filtering a reader to a writer |
+| [`FilterLine`](https://pkg.go.dev/github.com/jessp01/script#Pipe.FilterLine) | user-supplied function filtering each line to a string|
+| [`FilterScan`](https://pkg.go.dev/github.com/jessp01/script#Pipe.FilterScan) | user-supplied function filtering each line to a writer |
+| [`First`](https://pkg.go.dev/github.com/jessp01/script#Pipe.First) | first N lines of input |
+| [`Freq`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Freq) | frequency count of unique input lines, most frequent first |
+| [`Get`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Get) | response to HTTP GET on supplied URL |
+| [`Join`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Join) | replace all newlines with spaces |
+| [`JQ`](https://pkg.go.dev/github.com/jessp01/script#Pipe.JQ) | result of `jq` query |
+| [`Last`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Last) | last N lines of input|
+| [`Match`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Match) | lines matching given string |
+| [`MatchRegexp`](https://pkg.go.dev/github.com/jessp01/script#Pipe.MatchRegexp) | lines matching given regexp |
+| [`Post`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Post) | response to HTTP POST on supplied URL |
+| [`Reject`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Reject) | lines not matching given string |
+| [`RejectRegexp`](https://pkg.go.dev/github.com/jessp01/script#Pipe.RejectRegexp) | lines not matching given regexp |
+| [`Replace`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Replace) | matching text replaced with given string |
+| [`ReplaceRegexp`](https://pkg.go.dev/github.com/jessp01/script#Pipe.ReplaceRegexp) | matching text replaced with given string |
+| [`SHA256Sums`](https://pkg.go.dev/github.com/jessp01/script#Pipe.SHA256Sums) | SHA-256 hashes of each listed file |
+| [`Tee`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Tee) | input copied to supplied writers |
 
-Note that filters run concurrently, rather than producing nothing until each stage has fully read its input. This is convenient for executing long-running commands, for example. If you do need to wait for the pipeline to complete, call [`Wait`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Wait).
+Note that filters run concurrently, rather than producing nothing until each stage has fully read its input. This is convenient for executing long-running commands, for example. If you do need to wait for the pipeline to complete, call [`Wait`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Wait).
 
 ## Sinks
 
@@ -321,24 +321,24 @@ Sinks are methods that return some data from a pipe, ending the pipeline and ext
 
 | Sink | Destination | Results |
 | ---- | ----------- | ------- |
-| [`AppendFile`](https://pkg.go.dev/github.com/bitfield/script#Pipe.AppendFile) | appended to file, creating if it doesn't exist | bytes written, error |
-| [`Bytes`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Bytes) | | data as `[]byte`, error
-| [`CountLines`](https://pkg.go.dev/github.com/bitfield/script#Pipe.CountLines) | |number of lines, error  |
-| [`Read`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Read) | given `[]byte` | bytes read, error  |
-| [`SHA256Sum`](https://pkg.go.dev/github.com/bitfield/script#Pipe.SHA256Sum) | | SHA-256 hash, error  |
-| [`Slice`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Slice) | | data as `[]string`, error  |
-| [`Stdout`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Stdout) | standard output | bytes written, error  |
-| [`String`](https://pkg.go.dev/github.com/bitfield/script#Pipe.String) | | data as `string`, error  |
-| [`Wait`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Wait) | | none  |
-| [`WriteFile`](https://pkg.go.dev/github.com/bitfield/script#Pipe.WriteFile) | specified file, truncating if it exists | bytes written, error  |
+| [`AppendFile`](https://pkg.go.dev/github.com/jessp01/script#Pipe.AppendFile) | appended to file, creating if it doesn't exist | bytes written, error |
+| [`Bytes`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Bytes) | | data as `[]byte`, error
+| [`CountLines`](https://pkg.go.dev/github.com/jessp01/script#Pipe.CountLines) | |number of lines, error  |
+| [`Read`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Read) | given `[]byte` | bytes read, error  |
+| [`SHA256Sum`](https://pkg.go.dev/github.com/jessp01/script#Pipe.SHA256Sum) | | SHA-256 hash, error  |
+| [`Slice`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Slice) | | data as `[]string`, error  |
+| [`Stdout`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Stdout) | standard output | bytes written, error  |
+| [`String`](https://pkg.go.dev/github.com/jessp01/script#Pipe.String) | | data as `string`, error  |
+| [`Wait`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Wait) | | none  |
+| [`WriteFile`](https://pkg.go.dev/github.com/jessp01/script#Pipe.WriteFile) | specified file, truncating if it exists | bytes written, error  |
 
 # What's new
 
 | Version | New |
 | ----------- | ------- |
-| v0.22.0 | [`Tee`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Tee), [`WithStderr`](https://pkg.go.dev/github.com/bitfield/script#Pipe.WithStderr) |
-| v0.21.0 | HTTP support: [`Do`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Do), [`Get`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Get), [`Post`](https://pkg.go.dev/github.com/bitfield/script#Pipe.Post) |
-| v0.20.0 | [`JQ`](https://pkg.go.dev/github.com/bitfield/script#Pipe.JQ) |
+| v0.22.0 | [`Tee`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Tee), [`WithStderr`](https://pkg.go.dev/github.com/jessp01/script#Pipe.WithStderr) |
+| v0.21.0 | HTTP support: [`Do`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Do), [`Get`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Get), [`Post`](https://pkg.go.dev/github.com/jessp01/script#Pipe.Post) |
+| v0.20.0 | [`JQ`](https://pkg.go.dev/github.com/jessp01/script#Pipe.JQ) |
 
 # Contributing
 

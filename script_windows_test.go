@@ -3,7 +3,7 @@ package script_test
 import (
 	"testing"
 
-	"github.com/bitfield/script"
+	"github.com/jessp01/script"
 )
 
 func TestDirnameReturnsExpectedResultsOnPlatformsWithBackslashPathSeparator(t *testing.T) {
